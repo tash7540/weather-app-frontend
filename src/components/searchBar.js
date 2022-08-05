@@ -5,7 +5,7 @@ import { TextField, Button, Typography, Paper,Card,CardMedia,CardContent,CardAct
 import axios from 'axios';
 //import FileBase from 'react-file-base64'
 import { useDispatch, useSelector } from 'react-redux';
-import { searchDefault,searchCity } from '../actions/posts';
+import { searchDefault,searchCity,searchForecastCity} from '../actions/posts';
 
 
 const SearchBar = ({data})=>{
@@ -17,6 +17,8 @@ const SearchBar = ({data})=>{
     e.preventDefault();
     console.log(postData.city);
     dispatch(searchCity({city:postData.city}));
+    dispatch(searchForecastCity({city:postData.city}));
+
 
     clear();
   };

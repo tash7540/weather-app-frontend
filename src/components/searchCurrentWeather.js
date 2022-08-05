@@ -20,6 +20,8 @@ const SearchCurrentWeather = () => {
               <li>Pressure: {posts.pressure }</li>
               <li>Humidity: {posts.humidity }</li>
               <li>City: {posts.place }</li>
+              <li>Time: {posts.timezone }</li>
+
           </ul>
         </div>
     )
