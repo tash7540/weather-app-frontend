@@ -35,6 +35,22 @@ export default makeStyles({
     fontSize:'15px',
     fontColor:'white',
   },
+  details:{
+    marginLeft:'25px',
+    marginTop:'20px',
+    width:'450px',
+
+  },
+  data:{
+
+    display: 'flex',
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    marginTop:'10px',
+    marginBottom:'10px',
+
+
+  },
 
 
 });
