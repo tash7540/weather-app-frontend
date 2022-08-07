@@ -1,15 +1,15 @@
-//import useStyles from './styles';
+import useStyles from './styles';
 import React ,{useState,useEffect} from 'react';
 import { TextField, Button, Typography, Paper,Card,CardMedia,CardContent,CardActions,Grid } from '@material-ui/core';
-
+import SearchIcon from '@mui/icons-material/Search';
 import axios from 'axios';
 //import FileBase from 'react-file-base64'
 import { useDispatch, useSelector } from 'react-redux';
-import { searchDefault,searchCity,searchForecastCity} from '../actions/posts';
+import { searchDefault,searchCity,searchForecastCity} from '../../../actions/posts';
 
 
 const SearchBar = ({data})=>{
-  //const classes = useStyles();
+  const classes = useStyles();
   const [postData, setPostData] = useState({city: ''});
   const dispatch = useDispatch();
 
@@ -28,13 +28,12 @@ const SearchBar = ({data})=>{
   };
   return(
 
-    <Paper>
-      <form autoComplete="off" noValidate  onSubmit={handleSubmit}>
-        <TextField name="creator" variant="outlined" label="Search By City" fullWidth value={postData.city} onChange={(e) => setPostData({ ...postData, city: e.target.value })} />
-        <Button variant="contained" color="primary" size="large" type="submit" fullWidth>Submit</Button>
-        <Button variant="contained" color="secondary" size="small" onClick={clear} fullWidth>Clear</Button>
+      <form className = {classes.search} autoComplete="off" noValidate  onSubmit={handleSubmit}>
+        <Grid className = {classes.search} lg = "12">
+            <TextField className={classes.searchItem} name="search" size = "medium" variant="outlined" label="Search By City" fullWidth value={postData.city} onChange={(e) => setPostData({ ...postData, city: e.target.value })} />
+            <Button className={classes.searchItem} variant="contained" color="primary" size="small" type="submit"><SearchIcon/></Button>
+        </Grid>
       </form>
-    </Paper>
 
   );
 

@@ -1,5 +1,5 @@
 import { makeStyles } from '@material-ui/core/styles';
-import img from '../img/summer.avif';
+//import img from '../img/summer.avif';
 export default makeStyles({
   search:{
     display: 'flex',
@@ -30,7 +30,7 @@ export default makeStyles({
     borderRadius: '15px',
     height: '100%',
     position: 'relative',
-    //backgroundColor:'rgb(40, 44, 52)',
+    backgroundColor:'rgb(40, 44, 52)',
     marginTop:'40px',
   },
   time:{
