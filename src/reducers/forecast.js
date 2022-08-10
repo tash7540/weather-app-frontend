@@ -1,4 +1,4 @@
-export default (forecastData = {}, action) => {
+export default (forecastData = [], action) => {
   switch (action.type) {
 
     case 'FETCH_FORECAST_CITY':

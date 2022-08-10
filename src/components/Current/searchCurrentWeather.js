@@ -6,29 +6,10 @@ import { TextField, Button, Typography, Paper,Card,CardMedia,CardContent,CardAct
 import { useDispatch, useSelector } from 'react-redux';
 import useStyles from './styles';
 
-/*<Typography className = {classes.current}>Temperature(C): {posts.temp }</Typography>
-<Typography className = {classes.current}>Temperature(F): {posts.fahrenheit }</Typography>
-<Typography className = {classes.current}>condition: {posts.description }</Typography>
-<Typography className = {classes.current}>Pressure: {posts.pressure }</Typography>
-<Typography className = {classes.current}>Humidity: {posts.humidity }</Typography>
-<Typography className = {classes.current}>City: {posts.place }</Typography>
-
-???
-<Typography  className = {classes.day}>{posts.day}</Typography>
-<Typography  className = {classes.date}>{posts.date}</Typography>
-<div className = {classes.time}>
-  <Grid>
-    <AccessTimeIcon className = {classes.timeIcon}/>
-  </Grid>
-  <Grid>
-    <Typography className={classes.time}>{posts.time }</Typography>
-  </Grid>
-</div>*/
-
 const SearchCurrentWeather = () => {
     const posts = useSelector((state) => state.posts);
     const classes = useStyles();
-
+    console.log(posts.icon);
     return(
       !posts ? <CircularProgress/>:(
         <Card className={classes.card}>
@@ -38,7 +19,7 @@ const SearchCurrentWeather = () => {
               <AccessTimeIcon className = {classes.timeIcon}/>
             </Grid>
             <Grid>
-              <Typography className={classes.time}>{posts.time }</Typography>
+              <Typography >{posts.time }</Typography>
             </Grid>
           </div>
           <div className={classes.x}>

@@ -1,11 +1,10 @@
 import { makeStyles } from '@material-ui/core/styles';
-//import img from '../img/summer.avif';
 export default makeStyles({
   bigcard:{
-    marginTop:'50px',
+    marginTop:'40px',
     marginLeft:'25px',
     width:'450px',
-    height:'300px',
+    height:'326px',
   },
   card: {
     display: 'flex',
@@ -15,16 +14,19 @@ export default makeStyles({
     height: '150px',
     position: 'relative',
     //backgroundColor:'rgb(40, 44, 52)',
-    marginTop:'40px',
+    marginTop:'10px',
   },
-
-  current:{
+  title:{
+    margin:'20px',
     padding:'10px',
-    marginLeft:'10px',
-    fontSize:'15px',
-    fontColor:'white',
-    width:'100px',
-    height:'100%',
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+  titleText:{
+    fontSize:'25px',
+    fontWeight:'bold',
+    marginLeft:'80px',
+
   },
 
 

@@ -44,9 +44,7 @@ export default makeStyles({
   card: {
     display: 'flex',
     flexDirection: 'column',
-    //justifyContent: 'space-between',
     borderRadius: '15px',
-    height: '100%',
     position: 'relative',
     backgroundColor:'white',
     backgroundImage:`url(${img})`,//'rgb(40, 44, 52)',
@@ -70,13 +68,6 @@ export default makeStyles({
     marginLeft:'30px',
 
   },
-
-  current:{
-    padding:'10px',
-    marginLeft:'10px',
-    fontSize:'15px',
-    fontColor:'white',
-  },
   x:{
     margin:'80px',
   },
@@ -90,6 +81,7 @@ export default makeStyles({
   bottom:{
     display: 'flex',
     flexDirection: 'row',
+    marginBottom:'100px',
   },
 
 
