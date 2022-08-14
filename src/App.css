@@ -1,6 +1,8 @@
 .App {
   color: black !important;
-
+  background-color: #EFEFEF;
+  height: 100%;
+  width:100%;
 
 }
 .appBar {
@@ -26,7 +28,6 @@
     flex-direction: column;
     border-radius: 15px;
     border-color:black;
-    /*height: 100%;*/
     margin-top:40px;
 
 }

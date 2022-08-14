@@ -4,8 +4,10 @@ export default makeStyles({
     marginLeft:'25px',
     width:'450px',
     height:'280px',
-    marginBottom:'20px',
-    backgroundColor:'#DEDEDE',
+    marginBottom:'28px',
+    //backgroundColor:'#ECF8FF',
+    borderColor:'#DDDFE1',
+    borderStyle:'solid',
 
   },
   card: {
@@ -14,7 +16,7 @@ export default makeStyles({
     justifyContent: 'space-between',
     borderRadius: '15px',
     height: '150px',
-    //backgroundColor:'rgb(40, 44, 52)',
+
     marginTop:'10px',
   },
   title:{

@@ -22,8 +22,10 @@ export default makeStyles({
     marginLeft:'25px',
     marginTop:'25px',
     marginBottom:'25px',
-    backgroundColor:'#DEDEDE',
-
+    //backgroundColor:'#ECF8FF',
+    borderColor:'#DDDFE1',
+    borderStyle:'solid',
+    color:'black',
     width:'450px',
 
   },

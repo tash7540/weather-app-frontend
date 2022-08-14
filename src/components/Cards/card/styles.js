@@ -4,7 +4,9 @@ export default makeStyles({
   card:{
     textAlign:'center',
     padding:'12px',
-    backgroundColor:'#EFEFEF',
+    //backgroundColor:'#EFEFEF',
+    borderColor:'#DDDFE1',
+    borderStyle:'solid',
   },
   cardText:{
     fontSize:'20px',
