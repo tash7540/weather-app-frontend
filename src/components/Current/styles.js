@@ -8,19 +8,20 @@ export default makeStyles({
     fontWeight: 'bold',
   },
   day:{
-    marginLeft:'60px',
     fontSize:'30px',
     fontWeight: 'bold',
   },
   date:{
-    marginLeft:'60px',
     fontSize:'20px',
 
   },
   dayndate:{
     display:'flex',
     flexDirection: 'column',
-    marginTop:'30px',
+    marginTop:'100px',
+    padding:'10px',
+    marginLeft:'80px',
+
 
 
   },
@@ -29,16 +30,21 @@ export default makeStyles({
     flexDirection: 'column',
     marginLeft:'60px',
   },
-  descriptionIcon:{
-    marginLeft:'400px',
+  icon:{
+    marginTop:'52px',
+    marginLeft:'80px',
+    alignItems:'center',
 
-    width:'150px',
-    height:'150px',
+
+  },
+  descriptionIcon:{
+    alignItems:'center',
+    width:'100px',
+    height:'100px',
   },
   descriptionText:{
-    marginTop:'30px',
     fontWeight:'bold',
-    fontSize:'30px',
+    fontSize:'20px',
 
   },
   card: {
@@ -49,8 +55,7 @@ export default makeStyles({
     backgroundColor:'white',
     backgroundImage:`url(${img})`,//'rgb(40, 44, 52)',
     opacity: '0.5',
-
-    marginTop:'40px',
+    marginBottom:'20px',
   },
   time:{
     marginLeft:'10px',
@@ -69,19 +74,22 @@ export default makeStyles({
 
   },
   x:{
-    margin:'80px',
+    //marginTop:'110px',
+    //marginBottom:'60px',
+    alignItems:'center',
+
   },
   temps:{
-    marginTop:'30px',
+    marginTop:'110px',
     marginLeft:'40px',
-    fontSize:'40px',
+    fontSize:'30px',
     fontWeight: 'bold',
 
   },
   bottom:{
     display: 'flex',
     flexDirection: 'row',
-    marginBottom:'100px',
+    marginBottom:'20px',
   },
 
 

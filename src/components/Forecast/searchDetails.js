@@ -10,8 +10,8 @@ const SearchDetails = () => {
 
   return(
     !posts ? <CircularProgress/>:(
-      <div className={classes.card}>
-        <Container>
+      <div>
+        <Container className={classes.searchContainer}>
           <SearchBar className={classes.search}/>
         </Container>
         <Card className = {classes.details}>
@@ -24,8 +24,9 @@ const SearchDetails = () => {
               <Typography className = {classes.data}>Clouds: {posts.clouds }%</Typography>
 
           </Container>
-        </Card>
+    </Card>
     </div>
+
   )
   );
 

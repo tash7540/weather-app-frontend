@@ -1,10 +1,12 @@
 import { makeStyles } from '@material-ui/core/styles';
 export default makeStyles({
   bigcard:{
-    marginTop:'40px',
     marginLeft:'25px',
     width:'450px',
-    height:'326px',
+    height:'280px',
+    marginBottom:'20px',
+    backgroundColor:'#DEDEDE',
+
   },
   card: {
     display: 'flex',
@@ -12,22 +14,17 @@ export default makeStyles({
     justifyContent: 'space-between',
     borderRadius: '15px',
     height: '150px',
-    position: 'relative',
     //backgroundColor:'rgb(40, 44, 52)',
     marginTop:'10px',
   },
   title:{
-    margin:'20px',
+    display:"flex",
     padding:'10px',
-    alignItems: 'center',
     justifyContent: 'center',
   },
   titleText:{
-    fontSize:'25px',
+    fontSize:'20px',
     fontWeight:'bold',
-    marginLeft:'80px',
 
   },
-
-
 });

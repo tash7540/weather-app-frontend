@@ -14,6 +14,7 @@ const SearchCurrentWeather = () => {
       !posts ? <CircularProgress/>:(
         <Card className={classes.card}>
           <Typography  className = {classes.place}>{posts.place}</Typography>
+
           <div className = {classes.time}>
             <Grid>
               <AccessTimeIcon className = {classes.timeIcon}/>
@@ -21,19 +22,18 @@ const SearchCurrentWeather = () => {
             <Grid>
               <Typography >{posts.time }</Typography>
             </Grid>
-          </div>
-          <div className={classes.x}>
-          <img className={classes.descriptionIcon} src={posts.icon} alt="icon"/>
 
           </div>
+
+
           <div className={classes.bottom}>
             <Typography  className = {classes.temps}>{posts.fahrenheit}°F/{posts.temp }°C</Typography>
             <div className={classes.dayndate}>
               <Typography className ={classes.day}> {posts.day}</Typography>
               <Typography  className = {classes.date}>{posts.date}</Typography>
             </div>
-            <div className={classes.description}>
-
+            <div className={classes.icon}>
+              <img className={classes.descriptionIcon} src={posts.icon} alt="icon"/>
               <Typography className={classes.descriptionText} >{posts.description }</Typography>
             </div>
           </div>

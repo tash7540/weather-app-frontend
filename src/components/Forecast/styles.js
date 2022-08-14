@@ -3,11 +3,16 @@ export default makeStyles({
   search:{
     display: 'flex',
     flexDirection: 'row',
+
+  },
+  searchContainer:{
+    marginTop:'20px',
   },
   card: {
     display: 'flex',
     flexDirection: 'column',
     borderRadius: '15px',
+    borderColor:'black',
     height: '100%',
     position: 'relative',
     //backgroundColor:'rgb(40, 44, 52)',
@@ -15,7 +20,10 @@ export default makeStyles({
   },
   details:{
     marginLeft:'25px',
-    marginTop:'20px',
+    marginTop:'25px',
+    marginBottom:'25px',
+    backgroundColor:'#DEDEDE',
+
     width:'450px',
 
   },
