@@ -3,7 +3,7 @@ import { TextField, Button,Grid } from '@material-ui/core';
 import SearchIcon from '@mui/icons-material/Search';
 import useStyles from './styles';
 import { useDispatch} from 'react-redux';
-import { searchCity,searchForecastCity} from '../../../actions/posts';
+import { searchCity,searchForecastCity,searchTimeLine} from '../../../actions/posts';
 
 
 const SearchBar = ({data})=>{
@@ -16,6 +16,8 @@ const SearchBar = ({data})=>{
     console.log(postData.city);
     dispatch(searchCity({city:postData.city}));
     dispatch(searchForecastCity({city:postData.city}));
+    dispatch(searchTimeLine({city:postData.city}));
+
     clear();
   };
 

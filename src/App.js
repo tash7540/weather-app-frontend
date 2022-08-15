@@ -5,7 +5,7 @@ import SearchDetails  from './components/Forecast/searchDetails.js';
 import Forecast from './components/Cards/forecast.js';
 import { Container, AppBar, Typography, Grow, Grid,Card,Paper } from '@material-ui/core';
 import { useSelector,useDispatch } from 'react-redux';
-import {searchCity,searchForecastCity } from './actions/posts';
+import {searchCity,searchForecastCity,searchTimeLine} from './actions/posts';
 import Chart from './components/Chart/chart.js';
 function App() {
 
@@ -15,6 +15,7 @@ function App() {
   useEffect(() => {
     dispatch(searchCity({city:'boulder'}));
     dispatch(searchForecastCity({city:'boulder'}));
+    dispatch(searchTimeLine({city:'boulder'}));
 
   }, []);
 

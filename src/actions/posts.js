@@ -23,3 +23,13 @@ export const searchForecastCity = (city) => async (dispatch) => {
   }
 
 };
+export const searchTimeLine = (city) => async (dispatch) => {
+  try {
+    const {data}  = await api.fetchTimeLine(city);
+    console.log(data);
+    dispatch({ type: 'FETCH_TIMELINE_CITY', payload: data });
+  } catch (error) {
+    console.log(error);
+    console.log(error.message);
+  }
+};
