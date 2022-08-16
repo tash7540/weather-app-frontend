@@ -16,11 +16,11 @@ const SearchDetails = () => {
         </Container>
         <Card className = {classes.details}>
           <Container >
-          <Typography className = {classes.data}> Pressure:{posts.pressure } hPa</Typography>
-
               <Typography className = {classes.data}> Pressure:{posts.pressure } hPa</Typography>
               <Typography className = {classes.data}>Humidity: {posts.humidity }%</Typography>
               <Typography className = {classes.data}>Wind: {posts.windSpeed }</Typography>
+              <Typography className = {classes.data}>Wind Direction: {posts.windDirection }</Typography>
+
               <Typography className = {classes.data}>Clouds: {posts.clouds }%</Typography>
 
           </Container>

@@ -18,7 +18,7 @@ export default makeStyles({
   dayndate:{
     display:'flex',
     flexDirection: 'column',
-    marginTop:'100px',
+    marginTop:'80px',
     padding:'10px',
     marginLeft:'80px',
 
@@ -31,7 +31,6 @@ export default makeStyles({
     marginLeft:'60px',
   },
   icon:{
-    marginTop:'52px',
     marginLeft:'80px',
     alignItems:'center',
 
@@ -80,7 +79,7 @@ export default makeStyles({
 
   },
   temps:{
-    marginTop:'110px',
+    marginTop:'90px',
     marginLeft:'40px',
     fontSize:'30px',
     fontWeight: 'bold',
@@ -89,7 +88,7 @@ export default makeStyles({
   bottom:{
     display: 'flex',
     flexDirection: 'row',
-    marginBottom:'20px',
+    marginBottom:'10px',
   },
 
 
