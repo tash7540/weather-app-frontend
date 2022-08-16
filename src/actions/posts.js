@@ -4,7 +4,6 @@ export const searchCity = (city) => async (dispatch) => {
   try {
     const { data } = await api.fetchCity(city);
     console.log(data);
-    console.log('heret');
     dispatch({ type: 'FETCH_CITY', payload: data });
   } catch (error) {
     console.log(error);
@@ -27,7 +26,6 @@ export const searchTimeLine = (city) => async (dispatch) => {
   try {
     const {data}  = await api.fetchTimeLine(city);
     console.log(data);
-    console.log('ttee');
     dispatch({ type: 'FETCH_TIMELINE_CITY', payload: data });
   } catch (error) {
     dispatch({ type: 'FETCH_TIMELINE_CITY', payload: {} });
