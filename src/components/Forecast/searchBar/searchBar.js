@@ -13,7 +13,6 @@ const SearchBar = ({data})=>{
 
   const handleSubmit = (e) =>{
     e.preventDefault();
-    console.log(postData.city);
     dispatch(searchCity({city:postData.city}));
     dispatch(searchForecastCity({city:postData.city}));
     dispatch(searchTimeLine({city:postData.city}));
@@ -26,7 +25,7 @@ const SearchBar = ({data})=>{
   };
   return(
 
-      <form className = {classes.search} autoComplete="off" noValidate  onSubmit={handleSubmit}>
+      <form className = {classes.search} autoComplete="off" noValidate onSubmit={(e)=>handleSubmit(e)}>
         <Grid className = {classes.search} lg = "12">
             <TextField className={classes.searchItem} name="search" size = "large" variant="outlined" label="Search By City" fullWidth value={postData.city} onChange={(e) => setPostData({ ...postData, city: e.target.value })} />
             <Button  variant="contained" color="primary" size="small" type="submit"><SearchIcon/></Button>

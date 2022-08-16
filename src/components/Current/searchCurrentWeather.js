@@ -9,7 +9,6 @@ import useStyles from './styles';
 const SearchCurrentWeather = () => {
     const posts = useSelector((state) => state.posts);
     const classes = useStyles();
-    console.log(posts.icon);
     return(
       !posts ? <CircularProgress/>:(
         <Card className={classes.card}>

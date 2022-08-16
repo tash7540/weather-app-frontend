@@ -7,11 +7,14 @@ import { Container, AppBar, Typography, Grow, Grid,Card,Paper } from '@material-
 import { useSelector,useDispatch } from 'react-redux';
 import {searchCity,searchForecastCity,searchTimeLine} from './actions/posts';
 import Chart from './components/Chart/chart.js';
+
 function App() {
 
   const dispatch = useDispatch();
   const posts = useSelector((state) => state.posts);
   const forecast = useSelector((state) => state.forecastData);
+  const timelinedata = useSelector((state) => state.timelineData);
+
   useEffect(() => {
     dispatch(searchCity({city:'boulder'}));
     dispatch(searchForecastCity({city:'boulder'}));
@@ -31,6 +34,7 @@ function App() {
               <Card style={{borderStyle:'solid',borderColor:'#DDDFE1'}} className="leftCard">
                 <SearchCurrentWeather/>
                 <Chart/>
+
               </Card>
             </Grid>
             <Grid item xs={8} sm={8} lg ={5}>
