@@ -9,7 +9,7 @@ const Forecast = () => {
   const classes = useStyles();
   return(
     !forecast ? <CircularProgress/>:(
-      <Card className={classes.bigcard}>
+      <Card style={{backgroundColor:'#D4D4D4'}} className={classes.bigcard}>
         <div className = {classes.title}>
           <Typography  className = {classes.titleText}>Weather Forecast</Typography>
         </div>

@@ -26,19 +26,19 @@ function App() {
     <div className = "App">
       <Container maxWidth="xl">
         <Container maxWidth = "lg">
-          <AppBar className="appBar" position="static" color="inherit">
+          <AppBar style ={{backgroundColor:'#DCDCDC'}} className="appBar" position="static" color="inherit">
             <Typography variant="h2" align="center">Weather Checker</Typography>
           </AppBar>
           <Grid container justify="space-between" alignItems="stretch" spacing={3}>
             <Grid item xs={8} sm={8} lg={7}>
-              <Card style={{borderStyle:'solid',borderColor:'#DDDFE1'}} className="leftCard">
+              <Card style={{borderStyle:'solid',borderColor:'#DDDFE1',backgroundColor:'#DCDCDC'}} className="leftCard">
                 <SearchCurrentWeather/>
                 <Chart/>
 
               </Card>
             </Grid>
             <Grid item xs={8} sm={8} lg ={5}>
-            <Card style={{borderStyle:'solid',borderColor:'#DDDFE1'}} className="rightCard">
+            <Card style={{borderStyle:'solid',borderColor:'#DDDFE1',backgroundColor:'#DCDCDC'}} className="rightCard">
               <Grid>
                 <SearchDetails/>
               </Grid>

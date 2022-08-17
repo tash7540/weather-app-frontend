@@ -14,7 +14,7 @@ const SearchDetails = () => {
         <Container className={classes.searchContainer}>
           <SearchBar className={classes.search}/>
         </Container>
-        <Card className = {classes.details}>
+        <Card style={{backgroundColor:'#D4D4D4'}} className = {classes.details}>
           <Container >
               <Typography className = {classes.data}> Pressure:{posts.pressure } hPa</Typography>
               <Typography className = {classes.data}>Humidity: {posts.humidity }%</Typography>

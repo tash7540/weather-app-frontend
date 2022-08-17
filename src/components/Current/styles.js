@@ -5,7 +5,7 @@ export default makeStyles({
     marginTop:'20px',
     marginLeft:'40px',
     fontSize:'30px',
-    fontWeight: 'bold',
+    fontWeight: 'bolder',
   },
   day:{
     fontSize:'30px',
@@ -53,7 +53,6 @@ export default makeStyles({
     position: 'relative',
     backgroundColor:'white',
     backgroundImage:`url(${img})`,//'rgb(40, 44, 52)',
-    opacity: '0.5',
     marginBottom:'20px',
   },
   time:{
